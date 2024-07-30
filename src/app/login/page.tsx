@@ -11,7 +11,7 @@ export default function Login() {
         router.push('/elementos')
     }
     return(
-        <div className="w-full h-screen bg-gradient-to-r from-black to-escuro flex px-5 text-xs text-white">
+        <div className="w-full h-screen bg-gradient-to-r from-black to-escuro flex px-5 text-white">
             <div className='w-1/2 p-10 h-screen md:flex items-center justify-center hidden'>
                 <Image src={Img} className='h-screen w-full ' alt='imagem de login'/>
             </div>

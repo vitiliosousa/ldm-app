@@ -30,7 +30,7 @@ export default function Landing() {
               <h1 className='font-bold md:text-6xl text-3xl'>Transformando com o simples e minimalista</h1>
               <p className='text-xl text-cinza'>Transparência em cada etapa: Gerencie seus preços com clareza e confiança</p>
             </div>
-            <button onClick={entrar} className='text-black bg-dourado h-12 w-1/2 rounded font-bold text-sm' >Entrar</button>
+            <button onClick={entrar} className='text-black bg-dourado h-12 w-1/2 rounded font-bold'>Entrar</button>
           </div>
           <div className='w-1/2 md:flex items-end justify-end hidden'>
             <Image src={LandingImage} alt='imagem de landing page'/>           
