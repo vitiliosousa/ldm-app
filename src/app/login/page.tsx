@@ -4,6 +4,7 @@ import Input from '../../components/Input'
 import ButtonGoogle from '../../components/ButtonGoogle'
 import { useRouter } from 'next/navigation'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Login() {
     const router = useRouter()
@@ -35,17 +36,17 @@ export default function Login() {
                         <input type="checkbox"/>
                         <p>Lembrar-me</p>
                     </div>
-                    <a href="#" className='underline text-dourado' >Esqueceu a senha</a>
+                    <Link href="#" className='underline text-dourado' >Esqueceu a senha</Link>
                 </div>                
                 <button onClick={elementos} className="w-full text-black bg-dourado rounded font-bold h-12">
                     Entrar
                 </button>
-                <p>Não tens uma conta? <a href="/signup" className='text-dourado underline'>Criar Conta</a></p>
+                <p>Não tens uma conta? <Link href="/signup" className='text-dourado underline'>Criar Conta</Link></p>
                 <p>Ou</p>
                 <ButtonGoogle
                 texto={"Entrar com Google"}
                 />
-                <p className='text-center'>Ao prosseguir, voce automaticamente concorda com os <a href="#" className='text-dourado underline'>nossos termos</a> e <a href="" className='text-dourado underline'>politicas de privacidade</a></p>
+                <p className='text-center'>Ao prosseguir, voce automaticamente concorda com os <Link href="#" className='text-dourado underline'>nossos termos</Link> e <Link href="" className='text-dourado underline'>politicas de privacidade</Link></p>
             </div>
         </div>
     )
