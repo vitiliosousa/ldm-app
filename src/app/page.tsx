@@ -16,12 +16,12 @@ export default function Landing() {
   }
   return (
     <div className="w-full h-full bg-gradient-to-r from-black to-escuro text-white px-20 flex flex-col space-y-10">
-      <div className='h-screen flex flex-col justify-center'>
-        <div className="flex justify-between items-center">
+      <div className='h-screen w-full flex flex-col justify-center'>
+        <div className="flex justify-between items-center w-full">
           <h1 className="text-dourado font-bold text-xl hidden md:flex">LDM</h1>
-          <div className="flex gap-6 ">
-            <button onClick={entrar} className="h-8 w-24 bg-cinza rounded font-bold text-sm" >Entrar</button>
-            <button onClick={novaconta} className="h-8 w-24 bg-white text-black rounded font-bold text-sm" >Criar Conta</button>
+          <div className="flex flex-col md:flex-row gap-6 ">
+            <button onClick={entrar} className="h-8 md:w-28 bg-cinza rounded font-bold" >Entrar</button>
+            <button onClick={novaconta} className="h-8 w-28 bg-white text-black rounded font-bold" >Criar Conta</button>
           </div>
         </div>
         <div className='flex md:py-10'>

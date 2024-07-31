@@ -5,6 +5,7 @@ import ButtonGoogle from '../../components/ButtonGoogle'
 import { useRouter } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
+import Button from '../../components/Button'
 
 export default function Login() {
     const router = useRouter()
@@ -12,7 +13,7 @@ export default function Login() {
         router.push('/elementos')
     }
     return(
-        <div className="w-full h-screen bg-gradient-to-r from-black to-escuro flex px-5 text-white">
+        <div className="w-full md:h-screen h-full bg-gradient-to-r from-black to-escuro flex px-5 py-20 md:py-0 text-white">
             <div className='w-1/2 p-10 h-screen md:flex items-center justify-center hidden'>
                 <Image src={Img} className='h-screen w-full ' alt='imagem de login'/>
             </div>
@@ -36,11 +37,9 @@ export default function Login() {
                         <input type="checkbox"/>
                         <p>Lembrar-me</p>
                     </div>
-                    <Link href="#" className='underline text-dourado' >Esqueceu a senha</Link>
+                    <Link href="/login/forgot-password" className='underline text-dourado' >Esqueceu a senha</Link>
                 </div>                
-                <button onClick={elementos} className="w-full text-black bg-dourado rounded font-bold h-12">
-                    Entrar
-                </button>
+                <Button texto='Entrar' onclick={elementos}/>
                 <p>Não tens uma conta? <Link href="/signup" className='text-dourado underline'>Criar Conta</Link></p>
                 <p>Ou</p>
                 <ButtonGoogle
